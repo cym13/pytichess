@@ -31,7 +31,7 @@ class Game:
             piece      = self.at(*origin)
             valid_move = piece.valid(move) and piece.color == self.turn
 
-        piece.move((origin, destination))
+        self.move((origin, destination))
 
         self.turn = "white" if self.turn == "black" else "black"
 
